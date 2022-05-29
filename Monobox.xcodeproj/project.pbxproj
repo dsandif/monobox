@@ -10,7 +10,7 @@
 		A641B2272843D7CA006D8303 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B2262843D7C9006D8303 /* SidebarItem.swift */; };
 		A641B22B2843D82F006D8303 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B22A2843D82F006D8303 /* Sidebar.swift */; };
 		A641B22E2843DDBA006D8303 /* AllFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B22D2843DDBA006D8303 /* AllFilesView.swift */; };
-		A641B2302843F203006D8303 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B22F2843F203006D8303 /* ColorManager.swift */; };
+		A641B2302843F203006D8303 /* ColourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B22F2843F203006D8303 /* ColourManager.swift */; };
 		A641B23228440135006D8303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23128440135006D8303 /* CardView.swift */; };
 		A641B234284409EC006D8303 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B233284409EC006D8303 /* Utils.swift */; };
 		A6B218972843CF3600930AD4 /* MonoboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B218962843CF3600930AD4 /* MonoboxApp.swift */; };
@@ -23,7 +23,7 @@
 		A641B2262843D7C9006D8303 /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
 		A641B22A2843D82F006D8303 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		A641B22D2843DDBA006D8303 /* AllFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesView.swift; sourceTree = "<group>"; };
-		A641B22F2843F203006D8303 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		A641B22F2843F203006D8303 /* ColourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourManager.swift; sourceTree = "<group>"; };
 		A641B23128440135006D8303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A641B233284409EC006D8303 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A6B218932843CF3600930AD4 /* Monobox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,7 @@
 				A6B2189A2843CF3700930AD4 /* Assets.xcassets */,
 				A6B2189F2843CF3700930AD4 /* Monobox.entitlements */,
 				A6B2189C2843CF3700930AD4 /* Preview Content */,
-				A641B22F2843F203006D8303 /* ColorManager.swift */,
+				A641B22F2843F203006D8303 /* ColourManager.swift */,
 				A641B233284409EC006D8303 /* Utils.swift */,
 			);
 			path = Monobox;
@@ -185,7 +185,7 @@
 				A641B2272843D7CA006D8303 /* SidebarItem.swift in Sources */,
 				A6B218992843CF3600930AD4 /* SIdebarView.swift in Sources */,
 				A641B22B2843D82F006D8303 /* Sidebar.swift in Sources */,
-				A641B2302843F203006D8303 /* ColorManager.swift in Sources */,
+				A641B2302843F203006D8303 /* ColourManager.swift in Sources */,
 				A641B22E2843DDBA006D8303 /* AllFilesView.swift in Sources */,
 				A6B218972843CF3600930AD4 /* MonoboxApp.swift in Sources */,
 				A641B234284409EC006D8303 /* Utils.swift in Sources */,
