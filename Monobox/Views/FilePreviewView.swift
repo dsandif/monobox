@@ -18,8 +18,7 @@ struct FilePreviewView: View {
               .foregroundColor(Color.bodyText)
               
             Text("File Preview")
-              .font(.custom("", size: 13.0))
-              .kerning(0.7)
+              .font(.custom("Forza-Book", size: 13.0))
               .foregroundColor(.headings)
           Spacer()
         }.padding([.top],20)
@@ -36,45 +35,47 @@ struct FilePreviewView: View {
         VStack(alignment: .leading, spacing: 8){
           Text("Virtual Tour Scope.mp4")
             .foregroundColor(.headings)
-            .fontWeight(.semibold)
+            .font(.custom("Forza-Medium", size: 14.0))
           
           Text("2.5 GB, 01H:30M:45S")
-            .font(.caption2)
+            .font(.custom("Forza-Book", size: 9.0))
             .kerning(0.5)
         }
         
         VStack(alignment: .leading, spacing: 8){
           Text("File Description")
+            .font(.custom("Forza-Book", size: 10.0))
             .kerning(0.5)
-            .font(.caption2)
             .foregroundColor(.headings)
           Text("I literally just learned that my favourite board game in the whole world (Monopoly) is based on Atlantic City!")
-            .font(.caption2)
+            .font(.custom("Forza-Book", size: 10.0))
             .foregroundColor(.bodyText)
-            .fontWeight(.light)
+          
         }.padding(.vertical)
 
         Divider()
           .padding(.vertical, 15)
         VStack(alignment: .leading, spacing: 15){
           Text("File Shared With:")
-            .kerning(0.5)
-            .font(.caption2)
+            .font(.custom("Forza-Medium", size: 10.0))
             .foregroundColor(.headings)
           HStack(alignment: .center, spacing: 20){
             IconItemView(category: .other)
             Text("Zion Williamson")
-              .font(.caption2)
+              .font(.custom("Forza-Medium", size: 10.0))
+              .kerning(0.3)
           }
           HStack(alignment: .center, spacing: 20){
             IconItemView(category: .other)
             Text("Zach Lavine")
-              .font(.caption2)
+              .font(.custom("Forza-Medium", size: 10.0))
+              .kerning(0.3)
           }
           HStack(alignment: .center, spacing: 20){
             IconItemView(category: .other)
             Text("Brandon Roy")
-              .font(.caption2)
+              .font(.custom("Forza-Medium", size: 10.0))
+              .kerning(0.3)
           }
         }
         
@@ -84,19 +85,6 @@ struct FilePreviewView: View {
       .padding([.horizontal],30)
       .foregroundColor(Color.gray)
       .background(Color.lightBackground)
-      
-//        HStack(spacing: 2){
-//          Image(systemName: "brain.head.profile")
-//            .resizable()
-//            .aspectRatio(contentMode: .fit)
-//            .frame(height: 10)
-//          Text("gatewai")
-//            .kerning(1)
-//            .font(.custom("", size: 6.5))
-//            .font(.caption2)
-//            .fontWeight(.ultraLight)
-//
-//      }
       
     }
 }

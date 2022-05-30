@@ -23,11 +23,11 @@ struct CardView: View {
           Spacer()
           Group{
             Text("Documents")
+              .font(.custom("Forza-Book", size: 12.0))
               .foregroundColor(.headings)
-              .kerning(1)
-              .fontWeight(.semibold)
+              .kerning(-0.2)
             Text("24 files")
-              .font(.caption2)
+              .font(.custom("Forza-Light", size: 10.0))
               .foregroundColor(.bodyText)
           }
         }.padding(20)

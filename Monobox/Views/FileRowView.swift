@@ -12,11 +12,14 @@ struct FileRowView: View {
       HStack(alignment: .center){
         IconItemView(category: .electricity)
         Text("License Agreement.pdf")
+          .font(.custom("Forza-Book", size: 11.0))
+          .foregroundColor(Color.headings)
+        
+        Spacer()
         Spacer()
         Text("23.May.2022")
-          .font(.subheadline)
-          .fontWeight(.light)
           .foregroundColor(.gray)
+          .font(.custom("Forza-Book", size: 10.0))
         Spacer()
         HStack(spacing:20){
           Image(systemName: "person.3.sequence.fill")
@@ -30,7 +33,7 @@ struct FileRowView: View {
           Image(systemName: "ellipsis")
             .frame(height: 15)
             .rotationEffect(Angle.degrees(90))
-        }.foregroundColor(Color.gray)
+        }.foregroundColor(Color.headings)
       }
       .padding([.horizontal], 20)
       .frame(minWidth: 500, maxWidth: 1000, minHeight: 70)

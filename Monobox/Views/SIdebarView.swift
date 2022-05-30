@@ -30,7 +30,7 @@ struct ListView: View{
   var body: some View {
     VStack{
       ForEach(options, id:\.id) { option in
-        VStack {
+        VStack(alignment: .center, spacing: 12) {
           Image(systemName: option.imageName)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -38,8 +38,7 @@ struct ListView: View{
             .foregroundColor(Color.gray)
             
           Text(option.name.localizedUppercase)
-            .font(.custom("", size: 7.0))
-            .kerning(0.7)
+            .font(.custom("Forza-Light", size: 8.0))
             .foregroundColor(.gray)
         }
       }.padding([.horizontal],13)
@@ -53,7 +52,7 @@ struct ListView: View{
           .frame(height: 10)
         Text("gatewai")
           .kerning(1)
-          .font(.custom("", size: 6.5))
+          .font(.custom("Forza-Light", size: 6.5))
           .font(.caption2)
           .fontWeight(.ultraLight)
       }
@@ -76,9 +75,8 @@ struct MainContentView: View {
       VStack{
         HStack(alignment: .center){
           Text("Monobox")
-            .kerning(1)
-            .fontWeight(.thin)
-            
+            .font(Font.custom("Forza-Book", size: 13))
+          
           Spacer()
           HStack(spacing:20){
             Image(systemName: "plus.app")
@@ -112,7 +110,7 @@ struct MainContentView: View {
           
           VStack(alignment: .leading){
             Text("All Files")
-              .font(.subheadline)
+              .font(.custom("Forza-Book", size: 12.0))
             Divider()
             FileRowView()
             FileRowView()

@@ -17,6 +17,18 @@
 		A641B23828447AA4006D8303 /* FilePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23728447AA4006D8303 /* FilePreviewView.swift */; };
 		A641B23A284482ED006D8303 /* IconItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B239284482ED006D8303 /* IconItemView.swift */; };
 		A641B23C2844888C006D8303 /* FileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23B2844888C006D8303 /* FileRowView.swift */; };
+		A6AD934228453FDF00A1F771 /* Forza-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933628453FDE00A1F771 /* Forza-Light.ttf */; };
+		A6AD934328453FDF00A1F771 /* Forza-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933728453FDE00A1F771 /* Forza-ThinItalic.ttf */; };
+		A6AD934428453FDF00A1F771 /* Forza-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933828453FDE00A1F771 /* Forza-Medium.ttf */; };
+		A6AD934528453FDF00A1F771 /* Forza-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933928453FDE00A1F771 /* Forza-Thin.ttf */; };
+		A6AD934628453FDF00A1F771 /* Forza-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933A28453FDE00A1F771 /* Forza-MediumItalic.ttf */; };
+		A6AD934728453FDF00A1F771 /* Forza-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933B28453FDE00A1F771 /* Forza-Bold.ttf */; };
+		A6AD934828453FDF00A1F771 /* Forza-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933C28453FDE00A1F771 /* Forza-BoldItalic.ttf */; };
+		A6AD934928453FDF00A1F771 /* Forza-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933D28453FDE00A1F771 /* Forza-BookItalic.ttf */; };
+		A6AD934A28453FDF00A1F771 /* Forza-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933E28453FDE00A1F771 /* Forza-LightItalic.ttf */; };
+		A6AD934B28453FDF00A1F771 /* Forza-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD933F28453FDE00A1F771 /* Forza-Black.ttf */; };
+		A6AD934C28453FDF00A1F771 /* Forza-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD934028453FDE00A1F771 /* Forza-BlackItalic.ttf */; };
+		A6AD934D28453FDF00A1F771 /* Forza-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6AD934128453FDE00A1F771 /* Forza-Book.ttf */; };
 		A6B218972843CF3600930AD4 /* MonoboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B218962843CF3600930AD4 /* MonoboxApp.swift */; };
 		A6B218992843CF3600930AD4 /* SIdebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B218982843CF3600930AD4 /* SIdebarView.swift */; };
 		A6B2189B2843CF3700930AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B2189A2843CF3700930AD4 /* Assets.xcassets */; };
@@ -34,12 +46,24 @@
 		A641B23728447AA4006D8303 /* FilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewView.swift; sourceTree = "<group>"; };
 		A641B239284482ED006D8303 /* IconItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconItemView.swift; sourceTree = "<group>"; };
 		A641B23B2844888C006D8303 /* FileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRowView.swift; sourceTree = "<group>"; };
+		A6AD9334284534C300A1F771 /* Monobox.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Monobox.entitlements; path = ../../../Desktop/Monobox.entitlements; sourceTree = "<group>"; };
+		A6AD933628453FDE00A1F771 /* Forza-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Light.ttf"; sourceTree = "<group>"; };
+		A6AD933728453FDE00A1F771 /* Forza-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A6AD933828453FDE00A1F771 /* Forza-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Medium.ttf"; sourceTree = "<group>"; };
+		A6AD933928453FDE00A1F771 /* Forza-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Thin.ttf"; sourceTree = "<group>"; };
+		A6AD933A28453FDE00A1F771 /* Forza-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A6AD933B28453FDE00A1F771 /* Forza-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Bold.ttf"; sourceTree = "<group>"; };
+		A6AD933C28453FDE00A1F771 /* Forza-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A6AD933D28453FDE00A1F771 /* Forza-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-BookItalic.ttf"; sourceTree = "<group>"; };
+		A6AD933E28453FDE00A1F771 /* Forza-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-LightItalic.ttf"; sourceTree = "<group>"; };
+		A6AD933F28453FDE00A1F771 /* Forza-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Black.ttf"; sourceTree = "<group>"; };
+		A6AD934028453FDE00A1F771 /* Forza-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A6AD934128453FDE00A1F771 /* Forza-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forza-Book.ttf"; sourceTree = "<group>"; };
 		A6B218932843CF3600930AD4 /* Monobox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B218962843CF3600930AD4 /* MonoboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoboxApp.swift; sourceTree = "<group>"; };
 		A6B218982843CF3600930AD4 /* SIdebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIdebarView.swift; sourceTree = "<group>"; };
 		A6B2189A2843CF3700930AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6B2189D2843CF3700930AD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A6B2189F2843CF3700930AD4 /* Monobox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Monobox.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +107,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		A6AD933528453FC500A1F771 /* Forza */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD933F28453FDE00A1F771 /* Forza-Black.ttf */,
+				A6AD934028453FDE00A1F771 /* Forza-BlackItalic.ttf */,
+				A6AD933B28453FDE00A1F771 /* Forza-Bold.ttf */,
+				A6AD933C28453FDE00A1F771 /* Forza-BoldItalic.ttf */,
+				A6AD934128453FDE00A1F771 /* Forza-Book.ttf */,
+				A6AD933D28453FDE00A1F771 /* Forza-BookItalic.ttf */,
+				A6AD933628453FDE00A1F771 /* Forza-Light.ttf */,
+				A6AD933E28453FDE00A1F771 /* Forza-LightItalic.ttf */,
+				A6AD933828453FDE00A1F771 /* Forza-Medium.ttf */,
+				A6AD933A28453FDE00A1F771 /* Forza-MediumItalic.ttf */,
+				A6AD933928453FDE00A1F771 /* Forza-Thin.ttf */,
+				A6AD933728453FDE00A1F771 /* Forza-ThinItalic.ttf */,
+			);
+			path = Forza;
+			sourceTree = "<group>";
+		};
 		A6B2188A2843CF3600930AD4 = {
 			isa = PBXGroup;
 			children = (
@@ -102,15 +145,16 @@
 		A6B218952843CF3600930AD4 /* Monobox */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD933528453FC500A1F771 /* Forza */,
 				A641B2292843D807006D8303 /* ViewModels */,
 				A641B2252843D7A7006D8303 /* Models */,
 				A6B218962843CF3600930AD4 /* MonoboxApp.swift */,
 				A641B22C2843D8FA006D8303 /* Views */,
 				A6B2189A2843CF3700930AD4 /* Assets.xcassets */,
-				A6B2189F2843CF3700930AD4 /* Monobox.entitlements */,
 				A6B2189C2843CF3700930AD4 /* Preview Content */,
 				A641B22F2843F203006D8303 /* ColourManager.swift */,
 				A641B233284409EC006D8303 /* Utils.swift */,
+				A6AD9334284534C300A1F771 /* Monobox.entitlements */,
 			);
 			path = Monobox;
 			sourceTree = "<group>";
@@ -181,8 +225,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AD934428453FDF00A1F771 /* Forza-Medium.ttf in Resources */,
+				A6AD934328453FDF00A1F771 /* Forza-ThinItalic.ttf in Resources */,
+				A6AD934728453FDF00A1F771 /* Forza-Bold.ttf in Resources */,
+				A6AD934A28453FDF00A1F771 /* Forza-LightItalic.ttf in Resources */,
+				A6AD934528453FDF00A1F771 /* Forza-Thin.ttf in Resources */,
+				A6AD934828453FDF00A1F771 /* Forza-BoldItalic.ttf in Resources */,
+				A6AD934628453FDF00A1F771 /* Forza-MediumItalic.ttf in Resources */,
+				A6AD934C28453FDF00A1F771 /* Forza-BlackItalic.ttf in Resources */,
 				A6B2189E2843CF3700930AD4 /* Preview Assets.xcassets in Resources */,
 				A6B2189B2843CF3700930AD4 /* Assets.xcassets in Resources */,
+				A6AD934D28453FDF00A1F771 /* Forza-Book.ttf in Resources */,
+				A6AD934928453FDF00A1F771 /* Forza-BookItalic.ttf in Resources */,
+				A6AD934228453FDF00A1F771 /* Forza-Light.ttf in Resources */,
+				A6AD934B28453FDF00A1F771 /* Forza-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
