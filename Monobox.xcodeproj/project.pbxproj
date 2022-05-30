@@ -13,6 +13,10 @@
 		A641B2302843F203006D8303 /* ColourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B22F2843F203006D8303 /* ColourManager.swift */; };
 		A641B23228440135006D8303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23128440135006D8303 /* CardView.swift */; };
 		A641B234284409EC006D8303 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B233284409EC006D8303 /* Utils.swift */; };
+		A641B236284475DA006D8303 /* ContentHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B235284475DA006D8303 /* ContentHeadingView.swift */; };
+		A641B23828447AA4006D8303 /* FilePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23728447AA4006D8303 /* FilePreviewView.swift */; };
+		A641B23A284482ED006D8303 /* IconItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B239284482ED006D8303 /* IconItemView.swift */; };
+		A641B23C2844888C006D8303 /* FileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641B23B2844888C006D8303 /* FileRowView.swift */; };
 		A6B218972843CF3600930AD4 /* MonoboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B218962843CF3600930AD4 /* MonoboxApp.swift */; };
 		A6B218992843CF3600930AD4 /* SIdebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B218982843CF3600930AD4 /* SIdebarView.swift */; };
 		A6B2189B2843CF3700930AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B2189A2843CF3700930AD4 /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 		A641B22F2843F203006D8303 /* ColourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourManager.swift; sourceTree = "<group>"; };
 		A641B23128440135006D8303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A641B233284409EC006D8303 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A641B235284475DA006D8303 /* ContentHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeadingView.swift; sourceTree = "<group>"; };
+		A641B23728447AA4006D8303 /* FilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewView.swift; sourceTree = "<group>"; };
+		A641B239284482ED006D8303 /* IconItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconItemView.swift; sourceTree = "<group>"; };
+		A641B23B2844888C006D8303 /* FileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRowView.swift; sourceTree = "<group>"; };
 		A6B218932843CF3600930AD4 /* Monobox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B218962843CF3600930AD4 /* MonoboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoboxApp.swift; sourceTree = "<group>"; };
 		A6B218982843CF3600930AD4 /* SIdebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIdebarView.swift; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				A6B218982843CF3600930AD4 /* SIdebarView.swift */,
 				A641B22D2843DDBA006D8303 /* AllFilesView.swift */,
 				A641B23128440135006D8303 /* CardView.swift */,
+				A641B235284475DA006D8303 /* ContentHeadingView.swift */,
+				A641B23728447AA4006D8303 /* FilePreviewView.swift */,
+				A641B239284482ED006D8303 /* IconItemView.swift */,
+				A641B23B2844888C006D8303 /* FileRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,10 +196,14 @@
 				A641B23228440135006D8303 /* CardView.swift in Sources */,
 				A641B2272843D7CA006D8303 /* SidebarItem.swift in Sources */,
 				A6B218992843CF3600930AD4 /* SIdebarView.swift in Sources */,
+				A641B23C2844888C006D8303 /* FileRowView.swift in Sources */,
 				A641B22B2843D82F006D8303 /* Sidebar.swift in Sources */,
+				A641B236284475DA006D8303 /* ContentHeadingView.swift in Sources */,
 				A641B2302843F203006D8303 /* ColourManager.swift in Sources */,
 				A641B22E2843DDBA006D8303 /* AllFilesView.swift in Sources */,
+				A641B23828447AA4006D8303 /* FilePreviewView.swift in Sources */,
 				A6B218972843CF3600930AD4 /* MonoboxApp.swift in Sources */,
+				A641B23A284482ED006D8303 /* IconItemView.swift in Sources */,
 				A641B234284409EC006D8303 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

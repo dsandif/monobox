@@ -23,7 +23,9 @@ struct CardView: View {
           Spacer()
           Group{
             Text("Documents")
-              .bold()
+              .foregroundColor(.headings)
+              .kerning(1)
+              .fontWeight(.semibold)
             Text("24 files")
               .font(.caption2)
               .foregroundColor(.bodyText)

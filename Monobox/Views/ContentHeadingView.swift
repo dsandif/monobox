@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentHeading: View {
+struct ContentHeadingView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +15,6 @@ struct ContentHeading: View {
 
 struct ContentHeading_Previews: PreviewProvider {
     static var previews: some View {
-        ContentHeading()
+        ContentHeadingView()
     }
 }

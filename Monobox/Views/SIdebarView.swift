@@ -14,9 +14,11 @@ struct ContentView: View {
       HStack {
         ListView(options: viewModel.items)
           .frame(width: 80)
+          .padding([.top],20)
           .background(Color.lightBackground)
         MainContentView()
           .padding([.horizontal], 50)
+        FilePreviewView()
       }
       .background(Color.dashboardBackground)
     }
@@ -32,14 +34,16 @@ struct ListView: View{
           Image(systemName: option.imageName)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 20)
+            .frame(width: 17)
             .foregroundColor(Color.gray)
             
           Text(option.name.localizedUppercase)
             .font(.custom("", size: 7.0))
+            .kerning(0.7)
             .foregroundColor(.gray)
         }
-      }.padding(13)
+      }.padding([.horizontal],13)
+        .padding([.vertical],10)
       Spacer()
       
       HStack(spacing: 2){
@@ -48,7 +52,8 @@ struct ListView: View{
           .aspectRatio(contentMode: .fit)
           .frame(height: 10)
         Text("gatewai")
-          .font(.custom("", size: 6))
+          .kerning(1)
+          .font(.custom("", size: 6.5))
           .font(.caption2)
           .fontWeight(.ultraLight)
       }
@@ -62,17 +67,18 @@ struct ListView: View{
 
 struct MainContentView: View {
     let columns = [
-      GridItem(.flexible()),
-      GridItem(.flexible()),
-      GridItem(.flexible()),
-      GridItem(.flexible()),
-      GridItem(.flexible()),
+      GridItem(.adaptive(minimum: 200, maximum: 250)),
+      GridItem(.adaptive(minimum: 200, maximum: 250)),
+      GridItem(.adaptive(minimum: 200, maximum: 250)),
     ]
   
     var body: some View {
       VStack{
         HStack(alignment: .center){
-          Text("monobox")
+          Text("Monobox")
+            .kerning(1)
+            .fontWeight(.thin)
+            
           Spacer()
           HStack(spacing:20){
             Image(systemName: "plus.app")
@@ -88,14 +94,13 @@ struct MainContentView: View {
               .aspectRatio(contentMode: .fit)
               .frame(height: 15)
           }.foregroundColor(Color.gray)
-          
         }
         .frame(height: 60)
         .padding(5)
         
         Divider()
         ScrollView {
-          LazyVGrid(columns: columns, alignment: .leading) {
+          LazyVGrid(columns: columns, alignment: .leading, spacing: 15) {
               CardView()
               CardView()
               CardView()
@@ -103,7 +108,21 @@ struct MainContentView: View {
               CardView()
               CardView()
               CardView()
-            }
+          }.padding(.bottom, 50)
+          
+          VStack(alignment: .leading){
+            Text("All Files")
+              .font(.subheadline)
+            Divider()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+            FileRowView()
+          }
         }
         
         Spacer()
