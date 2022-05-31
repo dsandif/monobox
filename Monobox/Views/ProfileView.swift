@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
   let firstColWidth = 180.0
-  let secondColWidth = 220.0
+  let secondColWidth = 250.0
   let prefColwidth = 70.0
   var body: some View {
     VStack(alignment: .leading){
@@ -18,11 +18,13 @@ struct ProfileView: View {
         .padding(.bottom, 40)
         .padding(.top, 20)
       
-      VStack(alignment: .leading, spacing: 20){
+      VStack(alignment: .leading, spacing: 18){
         userSettings
         peopleSettings
       }
-    }.padding()
+    }
+    .padding()
+    .background(Color.dashboardBackground)
   }
   var userSettings: some View{
     Group{
@@ -128,7 +130,7 @@ struct ProfileView: View {
           .frame(width: firstColWidth, alignment: .leading)
           .font(Forza.caption)
         Spacer()
-        Text("Add a mailbox for people to send files easily")
+        Text("Add a mailbox for people to send me files easily")
           .frame(width: secondColWidth, alignment: .leading)
           .font(Forza.caption)
           .foregroundColor(.headings)
@@ -157,7 +159,7 @@ struct ProfileView: View {
             .cornerRadius(5)
         }
         
-        VStack(alignment: .leading, spacing: 20){
+        VStack(alignment: .leading, spacing: 18){
           HStack(alignment: .center){
             Text("Luka Doncic")
               .font(Forza.title)

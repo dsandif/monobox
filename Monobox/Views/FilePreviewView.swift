@@ -26,14 +26,24 @@ struct FilePreviewView: View {
         Divider()
           .padding(.vertical, 15)
         
-        Rectangle()
+        Image("vlog")
+          .resizable()
           .frame(width: 200, height: 130)
+          .border(Color.bodyText)
+          .overlay(
+            Image(systemName: "play.fill")
+              .font(.headline)
+              .background(Color.dashboardBackground.frame(width: 30, height: 30, alignment: .center).cornerRadius(5))
+              .foregroundColor(.headings)
+              .opacity(0.8)
+              
+          )
           
         Divider()
           .padding(.vertical, 15)
         
         VStack(alignment: .leading, spacing: 8){
-          Text("Virtual Tour Scope.mp4")
+          Text("Colorado Vlog.mp4")
             .foregroundColor(.headings)
             .font(.custom("Forza-Medium", size: 14.0))
           
@@ -47,7 +57,8 @@ struct FilePreviewView: View {
             .font(.custom("Forza-Book", size: 10.0))
             .kerning(0.5)
             .foregroundColor(.headings)
-          Text("I literally just learned that my favourite board game in the whole world (Monopoly) is based on Atlantic City!")
+          Text("I went to my favourite place on earth (Colorado) and I ended up hiking Pikes Peak in over a foot of snow!")
+            .lineSpacing(4)
             .font(.custom("Forza-Book", size: 10.0))
             .foregroundColor(.bodyText)
           
