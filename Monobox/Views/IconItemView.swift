@@ -37,11 +37,11 @@ struct IconItemView: View {
     var body: some View {
         Image(systemName: category.systemNameIcon)
         .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 10, height: 10)
-            .padding(.all, 8)
-            .foregroundColor(foreground)
-            .background(background)
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 10, height: 10)
+        .padding(.all, 8)
+        .foregroundColor(foreground)
+        .background(background)
         .cornerRadius(6)
     }
 }

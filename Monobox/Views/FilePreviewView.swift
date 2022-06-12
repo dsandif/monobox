@@ -26,10 +26,10 @@ struct FilePreviewView: View {
         Divider()
           .padding(.vertical, 15)
         
-        Image("vlog")
+        Image("0")
           .resizable()
           .frame(width: 200, height: 130)
-          .border(Color.bodyText)
+          .border(Color.darkGrey)
           .overlay(
             Image(systemName: "play.fill")
               .font(.headline)

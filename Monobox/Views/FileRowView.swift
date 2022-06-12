@@ -33,12 +33,11 @@ struct FileRowView: View {
           Image(systemName: "ellipsis")
             .frame(height: 15)
             .rotationEffect(Angle.degrees(90))
-        }.foregroundColor(Color.headings)
+        }.foregroundColor(Color.gray)
       }
+      .frame(minWidth: 500, maxWidth: 1000, minHeight: 50)
       .padding([.horizontal], 20)
-      .frame(minWidth: 500, maxWidth: 1000, minHeight: 70)
-      .cornerRadius(10)
-      .background(Color.lightBackground)
+      .background(Color.lightBackground.cornerRadius(10))
     }
 }
 

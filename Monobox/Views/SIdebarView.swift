@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = SidebarVM()
-    
+    @State var currentView = "dashboard"
     var body: some View {
       HStack {
-        ListView(options: viewModel.items)
+        ListView(options: viewModel.items, currentView: $currentView)
           .frame(width: 80)
           .padding([.top],20)
           .background(Color.lightBackground)
-        MainContentView()
+        MainContentView(currentView: currentView)
           .padding([.horizontal], 50)
         FilePreviewView()
       }
@@ -26,7 +26,7 @@ struct ContentView: View {
 
 struct ListView: View{
   let options: [SidebarItem]
-  
+  @Binding var currentView: String
   var body: some View {
     VStack{
       ForEach(options, id:\.id) { option in
@@ -41,6 +41,10 @@ struct ListView: View{
             .font(.custom("Forza-Light", size: 8.0))
             .foregroundColor(.gray)
         }
+        .onTapGesture {
+          currentView = "videos"
+        }
+
       }.padding([.horizontal],13)
         .padding([.vertical],10)
       Spacer()
@@ -65,12 +69,35 @@ struct ListView: View{
 }
 
 struct MainContentView: View {
-    let columns = [
-      GridItem(.adaptive(minimum: 200, maximum: 250)),
-      GridItem(.adaptive(minimum: 200, maximum: 250)),
-      GridItem(.adaptive(minimum: 200, maximum: 250)),
-    ]
-  
+  let columns:[GridItem] = Array(repeating: .init(.adaptive(minimum: 240)), count: 1)
+  let currentView: String
+  var dashboard: some View {
+    ScrollView {
+      LazyVGrid(columns: columns, alignment: .leading, spacing: 15) {
+          CardView()
+          CardView()
+          CardView()
+          CardView()
+          CardView()
+          CardView()
+          CardView()
+      }.padding(.bottom, 50)
+      
+      VStack(alignment: .leading){
+        Text("All Files")
+          .font(.custom("Forza-Book", size: 12.0))
+        Divider()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+        FileRowView()
+      }
+    }
+  }
     var body: some View {
       VStack{
         HStack(alignment: .center){
@@ -97,30 +124,14 @@ struct MainContentView: View {
         .padding(5)
         
         Divider()
-        ScrollView {
-          LazyVGrid(columns: columns, alignment: .leading, spacing: 15) {
-              CardView()
-              CardView()
-              CardView()
-              CardView()
-              CardView()
-              CardView()
-              CardView()
-          }.padding(.bottom, 50)
-          
-          VStack(alignment: .leading){
-            Text("All Files")
-              .font(.custom("Forza-Book", size: 12.0))
-            Divider()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-            FileRowView()
-          }
+        
+        switch(currentView){
+        case "dashboard":
+          dashboard
+        case "videos":
+          AllFilesView()
+        default:
+          dashboard
         }
         
         Spacer()
