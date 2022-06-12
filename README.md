@@ -1,5 +1,4 @@
 # monobox
-A monochrome redesign of Dropbox (work in progress)<br />
 <div>
 A design study of how color vision can be both aesthetically pleasing and highly fuctional in a monochrome context as opposed to the status quo in digital design. Monobox implements high-fidelity UX & aesthetics into a functional prototype of Dropbox.
 </div>
