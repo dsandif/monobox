@@ -1,6 +1,6 @@
 # monobox
 <div>
-Dropbox in monochrome
+A functional prototype for a Dropbox UI design in monochrome
 </div>
 <br />
 <img width="757" alt="image" src="https://user-images.githubusercontent.com/3058101/173217066-71c54098-ba5b-477a-bea5-bc5c873d6b52.png">
